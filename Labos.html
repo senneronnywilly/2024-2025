@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Inhoudstafel</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="inhoudstafel">Inhoudstafel</h1>
+<ul>
+<li><a href="#inhoudstafel">Inhoudstafel</a>
+<ul>
+<li><a href="#reeks-1">Reeks 1</a>
+<ul>
+<li><a href="#oefening-8">Oefening 8</a></li>
+</ul>
+</li>
+<li><a href="#reeks-2">Reeks 2</a>
+<ul>
+<li><a href="#oefening-1">Oefening 1</a></li>
+<li><a href="#oefening-2">Oefening 2</a></li>
+<li><a href="#oefening-3">Oefening 3</a></li>
+<li><a href="#oefening-4">Oefening 4</a></li>
+<li><a href="#oefening-5">Oefening 5</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="reeks-1">Reeks 1</h2>
+<h3 id="oefening-8">Oefening 8</h3>
+<p>vb. rrc gevolgd door rlc:</p>
+<ol>
+<li>in Accumulator: 1100 -&gt; 110. met 0 in carry</li>
+<li>in register B: 0 van carry naar register -&gt; 0</li>
+<li>in Accumulator: 110. -&gt; 11.. met 0 in carry</li>
+<li>in register B: 0 van carry naar register -&gt; 00</li>
+<li>in Accumulator: 11.. -&gt; 1... met 1 in carry</li>
+<li>in register B: 1 van carry naar register -&gt; 001</li>
+<li>in Accumulator: 1... -&gt; 0 met 1 in carry</li>
+<li>in register B: 1 van carry naar register -&gt; 0011</li>
+</ol>
+<pre><code>org 0000H
+
+jmp main
+
+org  0050H
+
+main:   mov R2,#8
+        mov A,#0BCH
+        mov B,#00
+loop:   rrc A           (ACC&gt;&gt;=1 en C=LSb Acc)
+        mov R3,A        (voor tijdelijke opslag eig &quot;push Acc&quot;)
+        mov A,B
+        rlc A 
+        mov B,A         (B&lt;&lt;=1 en LSb B=C)
+        mov A,R3        (terughalen is dan &quot;pop Acc&quot;)
+        djnz R2, loop
+        jmp $
+</code></pre>
+<h2 id="reeks-2">Reeks 2</h2>
+<blockquote>
+<p><strong>De simulator bevat slechts twee timers en de klokfrequentie bedraagt 12 MHz (intern gedeeld door 12).</strong></p>
+</blockquote>
+<h3 id="oefening-1">Oefening 1</h3>
+<blockquote>
+<p><strong>zie pagina 120 van datasheet</strong></p>
+</blockquote>
+<p>de klokfrequentie is 12 MHz gedeeld door 12 =&gt; simpele regel van 3 om uit te rekenen hoelang het duurt</p>
+<pre><code>0000
+0001
+....
+00FF
+0100
+....
+FFFF
+    -&gt; overflow
+0000
+</code></pre>
+<p>hoelang duurt het om van 0000 naar FFFF te geraken?</p>
+<p>(65,636 * 10^3^s) / (10^6^) = (65,636 * 10^-3^s) = 65,536 ms</p>
+<p>==(<strong>aantal ticks</strong>)/(<strong>klokfrequentie</strong>) =  <strong>tijdsinterval</strong>==</p>
+<h3 id="oefening-2">Oefening 2</h3>
+<blockquote>
+<p><strong>zie pagina 286, 287, 289 en 290 van datasheet</strong></p>
+</blockquote>
+<p>beschikbare registers: TMOD, TCOM, TH0, TH1, TL0 en TL1 (nog niet CKCON, pas later toegevoegd)</p>
+<p>TH0 en TL0 zijn de tel-registers</p>
+<p>TCOM: Bit7 -&gt; Bit4 gaan over timers</p>
+<p>TMOD: configuratie (1x), Bit7 -&gt; Bit4 gaan over timer1 en Bit3 -&gt; Bit0 gaan over timer2</p>
+<h3 id="oefening-3">Oefening 3</h3>
+<pre><code>org 0000H
+
+jmp main
+
+org 0050H
+
+main:   mov TMOD,#10H   (timer 1 mode 1 (16 bit timer ))(bv. TMOD=23H --&gt; timer1 mode 2, timer 0 mode 3)
+        mov TH1,#06H
+        mov TL1,#00H
+        setb TR1
+loop:   jnb TF1,$   (zolang niet overlopen, vlag dus op 0)
+        mov TH1,#06H   (hier breakpoint)(registers terug op startwaarden na overlopen)
+        mov TL1,#00H
+        clr TF1     (vlag clearen, terug op 0)
+        cpl P1.6
+        jmp loop
+</code></pre>
+<p>aantal ticks = 64ms * 10^6^ = 64 000</p>
+<p><strong>x + inverse_x = -1</strong> =&gt; <strong>-x = inverse_x + 1</strong><br>
+in Windows calculator:</p>
+<ol>
+<li>Programmer</li>
+<li>64 000</li>
+<li>Bitwise -&gt; NOT</li>
+<li>+1</li>
+<li>HEX: ... <strong>0600</strong> (minst beduidende zijn belangrijkste)</li>
+</ol>
+<h3 id="oefening-4">Oefening 4</h3>
+<p>aantal ticks (voor 2s) = 2 000 000 = 20 000 * 100</p>
+<p>in Windows calculator:</p>
+<ol>
+<li>Programmer</li>
+<li>20 000 (DEC)</li>
+<li>+/-</li>
+<li>HEX: ... <strong>B1E0</strong></li>
+</ol>
+<p><em>versie 1: om seconden te checken</em></p>
+<pre><code>org 0000H
+
+jmp main
+
+org 0050H
+
+main:   mov TMOD,#10H
+        mov TH1,#0B1H
+        mov TL1,#0E0H
+        setb TR1
+start:  mov R7,#100
+loop:   jnb TF1,$
+        mov TH1,#0B1H
+        mov TL1,#0E0H
+        clr TF1
+        djnz R7,loop
+        cpl P1.6    (hier breakpoint)
+        jmp start
+</code></pre>
+<p><em>versie 2</em></p>
+<pre><code>org 0000H
+
+jmp main
+
+org 0050H
+
+main:   mov TMOD,#10H
+        mov TH1,#0B1H
+        mov TL1,#0E0H
+        mov R2,#00
+        setb TR1
+start:  mov R7,#100
+loop:   jnb TF1,$
+        mov TH1,#0B1H
+        mov TL1,#0E0H
+        clr TF1
+        djnz R7,loop
+        inc R2
+        cjne R2,#10,uitschrijven    (wanneer R2 verschillend is naar 10 dan jump naar uitschrijven)
+        mov R2,#00      (voert dit uit als gelijk aan 10)
+uitschrijven:   mov A,R2
+                cpl A
+                mov P1,A
+        jmp start
+</code></pre>
+<h3 id="oefening-5">Oefening 5</h3>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>
